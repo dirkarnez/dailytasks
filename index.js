@@ -1,12 +1,11 @@
 [
-{
-	a: () => console.log("h")
-},
-{
-	a: () => console.log("h")
-},
-{
-	a: () => console.log("h")
-}
-]
-.forEach(a => a.a())
+	{
+		a: (now) => console.log("h")
+	},
+	{
+		a: (now) => console.log("h")
+	},
+	{
+		a: (now) => console.log("h")
+	}
+].forEach(a => a.a(new Date()))
